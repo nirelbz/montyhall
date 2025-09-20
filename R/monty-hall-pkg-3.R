@@ -65,7 +65,9 @@ select_door <- function( )
 #'		This function takes the game and the a.pick variables as arguments to ensure that the result is not the player selected door. 
 #' @return 
 #'		This function returns an opened.door variable which contains an integer between 1 and 3 inclusive. 
-#' @examples
+#' @examples 
+#' 		this.game <- create_game()
+#' 		this.pick <- select_door()
 #'		open_goat_door(this.game, this.pick)
 #' @export
 open_goat_door <- function( game, a.pick )
@@ -97,7 +99,8 @@ open_goat_door <- function( game, a.pick )
 #' @return 
 #'		This function returns a final.pick variable that is an integer between 1 and 3
 #' @examples
-#'		change_door(stay=F, opened.door, this.pick)
+#' 		goat.door <- open_goat_door(this.game, this.pick)
+#'		change_door(stay=F, goat.door, this.pick)
 #' @export
 change_door <- function( stay=T, opened.door, a.pick )
 {
@@ -128,7 +131,8 @@ change_door <- function( stay=T, opened.door, a.pick )
 #' @return 
 #'		This function returns results with the string WIN or LOSE
 #' @examples
-#'		determine_winner(final.pick, this.game)
+#'		selection <- change_door(stay=F, goat.door, this.pick)
+#'		determine_winner(selection, this.game)
 #' @export
 determine_winner <- function( final.pick, game )
 {
@@ -304,7 +308,5 @@ play_n_games <- function( n=100 )
 
 #' game.outcome.stay <- determine_winner( final.pick=my.final.pick.stay, game=this.game )
 #' game.outcome.switch <- determine_winner( final.pick=my.final.pick.switch, game=this.game )
-
-
 
 
