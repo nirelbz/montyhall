@@ -1,0 +1,13 @@
+Package: montyhall
+Title: Simulate the Monty Hall Problem
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nirel", "Berz", , "nberz@asu.edu", role = c("aut", "cre"))
+Description: This package creates a game to simulate the Monty Hall problem. Players will choose a door, the game will open a goat door, then players will either keep their original choice or change to the remaining door. The game will then produce a "WIN" or "LOSE" outcome.
+Depends: 
+	dplyr
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
